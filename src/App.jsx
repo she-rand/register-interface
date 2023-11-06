@@ -54,7 +54,14 @@ const handleSubmit = (e) => {
 };
   return (
     <>
-    <Register actionSubmit={handleSubmit} actionName={handleOnChangeName} actionEmail={handleOnChangeEmail} actionPassword={handleOnChangePassword} actionConfirmation={handleOnChangeConfirmation} mensaje={mensaje} color={color}></Register>
+    <div className='principal'>
+      <div className='m-2 p-3 rounded border border-2 border-dark'>
+        <h1>Create and Account</h1>
+        <Register actionSubmit={handleSubmit} actionName={handleOnChangeName} actionEmail={handleOnChangeEmail} actionPassword={handleOnChangePassword} actionConfirmation={handleOnChangeConfirmation} mensaje={mensaje} color={color}></Register>
+
+      </div>
+     
+    </div>
     
     
     </>
