@@ -35,21 +35,17 @@ var validEmail =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
 const handleSubmit = (e) => { 
   e.preventDefault();
   if(!name.trim()||!password.trim()||!confirmation.trim()||!email.trim()){
-      alert("Llene los campos")
       setMensaje("Complete all the fields")
       setColor("text-danger")
       return
   }
   if(password!=confirmation){
-      alert("Password confirmation does not match")
       setMensaje("Password confirmation does not match")
       setColor("text-danger")
   }if(!validEmail.test(email)){
-    alert("Email is invalid, skip form submission")
     setMensaje("Email is invalid, skip form submission")
     setColor("text-danger")
 }else{
-      alert("Succesful")
       setMensaje("Succesful")
       setColor("text-success")
   }
